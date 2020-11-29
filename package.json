@@ -11,57 +11,66 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:vscode-touchbar.def",
-		"onCommand:vscode-touchbar.ref",
-		"onCommand:vscode-touchbar.fold",
-		"onCommand:vscode-touchbar.unfold",
-		"onCommand:vscode-touchbar.format"
+		"onCommand:vscode-touchbar.fwd",
+		"onCommand:vscode-touchbar.bwd",
+		"onCommand:vscode-touchbar.clp",
+		"onCommand:vscode-touchbar.exp",
+		"onCommand:vscode-touchbar.fmt",
+		"onCommand:vscode-touchbar.redo"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "vscode-touchbar.def",
-				"title": "def"
+				"command": "vscode-touchbar.fwd",
+				"title": "fwd"
 			},
 			{
-				"command": "vscode-touchbar.ref",
-				"title": "ref"
+				"command": "vscode-touchbar.bwd",
+				"title": "bwd"
 			},
 			{
-				"command": "vscode-touchbar.fold",
-				"title": "fold"
+				"command": "vscode-touchbar.clp",
+				"title": "clp"
 			},
 			{
-				"command": "vscode-touchbar.unfold",
-				"title": "unfold"
+				"command": "vscode-touchbar.exp",
+				"title": "exp"
 			},
 			{
-				"command": "vscode-touchbar.format",
+				"command": "vscode-touchbar.fmt",
 				"title": "fmt"
+			},
+			{
+				"command": "vscode-touchbar.redo",
+				"title": "redo"
 			}
 		],
 		"menus": {
 			"touchBar": [
 				{
-					"command": "vscode-touchbar.def",
+					"command": "vscode-touchbar.fwd",
 					"group": "debug"
 				},
 				{
-					"command": "vscode-touchbar.ref",
+					"command": "vscode-touchbar.bwd",
 					"group": "debug"
 				},
 				{
-					"command": "vscode-touchbar.fold",
+					"command": "vscode-touchbar.clp",
 					"group": "view"
 				},
 				{
-					"command": "vscode-touchbar.unfold",
+					"command": "vscode-touchbar.exp",
 					"group": "view"
 				},
 				{
-					"command": "vscode-touchbar.format",
-					"group": "editing"
+					"command": "vscode-touchbar.fmt",
+					"group": "edit"
+				},
+				{
+					"command": "vscode-touchbar.redo",
+					"group": "edit"
 				}
 			]
 		}

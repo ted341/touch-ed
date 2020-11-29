@@ -6,27 +6,31 @@ import * as vscode from 'vscode';
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
 
-	let def = vscode.commands.registerCommand('vscode-touchbar.def', () => {
+	let forward = vscode.commands.registerCommand('vscode-touchbar.fwd', () => {
 		vscode.commands.executeCommand('editor.action.revealDefinition');
 	});
 
-	let ref = vscode.commands.registerCommand('vscode-touchbar.ref', () => {
+	let backward = vscode.commands.registerCommand('vscode-touchbar.bwd', () => {
 		vscode.commands.executeCommand('workbench.action.navigateBack');
 	});
 
-	let fold = vscode.commands.registerCommand('vscode-touchbar.fold', () => {
+	let collapse = vscode.commands.registerCommand('vscode-touchbar.clp', () => {
 		vscode.commands.executeCommand('editor.foldAll');
 	});
 
-	let unfold = vscode.commands.registerCommand('vscode-touchbar.unfold', () => {
+	let expand = vscode.commands.registerCommand('vscode-touchbar.exp', () => {
 		vscode.commands.executeCommand('editor.unfoldAll');
 	});
 
-	let format = vscode.commands.registerCommand('vscode-touchbar.format', () => {
+	let format = vscode.commands.registerCommand('vscode-touchbar.fmt', () => {
 		vscode.commands.executeCommand('editor.action.formatDocument');
 	});
 
-	context.subscriptions.push(def, ref, fold, unfold, format);
+	let redo = vscode.commands.registerCommand('vscode-touchbar.redo', () => {
+		vscode.commands.executeCommand('redo');
+	});
+
+	context.subscriptions.push(forward, backward, collapse, expand, format, redo);
 }
 
 // this method is called when your extension is deactivated
