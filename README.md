@@ -5,9 +5,7 @@
 
 Integrate some of the most frequently-used VSCode shortcuts onto the touch bar to allow fast development by one-click edit.
 
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+<img width="1004" alt="touch bar preview" src="https://user-images.githubusercontent.com/19609845/126685982-1760e014-eb84-491e-925d-2d9c1cdbf3b2.png">
 
 ## Requirements
 
