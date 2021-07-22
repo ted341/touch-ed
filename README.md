@@ -1,6 +1,3 @@
-# README
-
-
 ## Features
 
 Integrate some of the most frequently-used VSCode shortcuts onto the touch bar to allow fast development by one-click edit.
