@@ -16,6 +16,7 @@
 		"onCommand:vscode-touchbar.clp",
 		"onCommand:vscode-touchbar.exp",
 		"onCommand:vscode-touchbar.fmt",
+		"onCommand:vscode-touchbar.cmt",
 		"onCommand:vscode-touchbar.redo"
 	],
 	"main": "./out/extension.js",
@@ -43,7 +44,11 @@
 			},
 			{
 				"command": "vscode-touchbar.redo",
-				"title": "redo"
+				"title": "red"
+			},
+			{
+				"command": "vscode-touchbar.cmt",
+				"title": "cmt"
 			}
 		],
 		"menus": {
@@ -70,6 +75,10 @@
 				},
 				{
 					"command": "vscode-touchbar.redo",
+					"group": "edit"
+				},
+				{
+					"command": "vscode-touchbar.cmt",
 					"group": "edit"
 				}
 			]
