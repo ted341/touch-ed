@@ -1,4 +1,4 @@
-# vscode-touchbar README
+# README
 
 
 ## Features
