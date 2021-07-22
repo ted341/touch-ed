@@ -3,7 +3,7 @@
 	"publisher": "hcchang0701",
 	"displayName": "vscode_touchbar",
 	"description": "vscode touchbar extension to facilitate development",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"engines": {
 		"vscode": "^1.50.0"
 	},
